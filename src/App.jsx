@@ -1,5 +1,4 @@
 import "./styles/utilities.css";
-import "./styles/colors.css";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -13,7 +12,7 @@ const App = () => {
     <div className="app">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<RecursiveCounter />} />
+          <Route path="/" element={<RecursiveCounter initial={1}/>} />
         </Routes>
       </BrowserRouter>
     </div>
